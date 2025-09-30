@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #e2eaff)
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-radius: 8px;
+}
+
+.form__form{
+    padding: 12px;
+}
+
+.form__imput{
+    padding: 5px;
+    font-size: 18px;
+}
+
+.form__imput :is(input, textarea){
+    width: 100%;
+    padding: 9px;
+    margin: 4px;
+    border: none;
+    background-color: #fffd;    
+    box-shadow: 2px 2px 4px #0003;
+}
+
+.form__imput input[type="submit"]{
+    padding: 12px;
+    background-color: #48e;
+    color: #fff;
+    margin-left: 12px;
+}
