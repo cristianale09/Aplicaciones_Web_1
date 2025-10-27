@@ -95,6 +95,80 @@ body {
 
 /* ------ ABAUT US SECTION ------*/
 
+.section {
+    width: 100%;
+    min-height: 100vh;    
+}
 
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+}
+
+.image-section img {
+    width: 80%;
+    height: auto;
+}
+
+.content-section .title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-section .content h3 {
+    font-size: 21px;
+    color: var(--text-color);
+}
+
+.content-section .content p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content-section .content .button{
+    margin-top: 30px;
+}
+
+.content-section .content .button a {
+    background-color: var(--btn-color);
+    padding: 12px 40px;
+    text-decoration: none;
+    color: var(--btn-text-color);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover {
+    background-color: var(--header-text-color);
+    color: var(--footer-bg-color);
+}
+
+.content-section .social {
+    margin: 40px 0px;
+}
+
+.content-section .social i {
+    color: var(--header-text-color);
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-section .social i:hover {
+    color: var(--text-color);
+}
 
 /* ------ ABAUT US ENDS ------*/
