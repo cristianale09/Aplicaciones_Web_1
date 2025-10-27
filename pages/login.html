@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login/Signup Form</title>
+        <link rel="stylesheet" href="../assets/styles-login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="form__box login">
+                <form action="#">
+                    <h1>Iniciar sesion</h1>
+                    <div class="input__box">
+                        <input type="text" placeholder="Usuario" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input__box">
+                        <input type="password" placeholder="Contraseña" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div class="forgot__link">
+                        <a href="#">¿Olvido su contraseña?</a>
+                    </div>
+                    <button type="submit" class="btn">Iniciar sesion</button>
+                    <p>Regresar</p>
+                    <div class="home__icon">
+                        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                    </div>                  
+                </form>
+            </div>
+
+            <div class="form__box register">
+                <form action="#">
+                    <h1>Registrarse</h1>
+                    <div class="input__box">
+                        <input type="text" placeholder="Usuario" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input__box">
+                        <input type="email" placeholder="Correo" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="input__box">
+                        <input type="password" placeholder="Contraseña" required>
+                         <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <button type="submit" class="btn">Registrarse</button>
+                    <p>Regresar</p>
+                    <div class="home__icon">
+                        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+                    </div> 
+                </form>
+            </div>
+
+            <div class="toggle__box">
+                <div class="toggle__panel toggle--left">
+                    <h1>¡Hola, Bienvenido!</h1>
+                    <p>¿No tienes una cuenta?</p>
+                    <button class="btn register--btn">Registrarse</button>
+                </div>
+
+                <div class="toggle__panel toggle--right">
+                    <h1>¡Bienvenido de nuevo!</h1>
+                    <p>¿Ya tienes una cuenta?</p>
+                    <button class="btn login--btn">Inicia sesion</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../assets/script.js"></script>
+</html>

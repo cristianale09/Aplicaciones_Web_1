@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
     padding: 0;    
     box-sizing: border-box;
-    font-family: 'Monserrat', sans-serif;
-    background-color: #edf0f1;
+    font-family: "Poppins", sans-serif;    
+    --bg-color: #e2eaff;
+    --text-color: #333;
+    --btn-color: #48e;
+    --btn-text-color: #fff;
+    --header-bg-color: #fff;
+    --header-text-color: #26e;
+    --footer-bg-color: #24252a;
+    --footer-text-color: #888;
+    background-color: var(--bg-color);
     scroll-behavior: smooth;
 }
 
@@ -14,7 +24,7 @@ body {
     justify-content: space-between;   
     align-items: center;
     position: sticky;
-    background-color: #24252a;
+    background-color: var(--header-bg-color);
     font-size: 18px;
 }
 
@@ -45,7 +55,7 @@ body {
 }
 
 .header__nav-item a{
-    color: #48e;
+    color: var(--header-text-color);
     text-decoration: none;
 }
 
@@ -53,19 +63,38 @@ body {
     text-decoration: underline;
 }
 
-button {
+.header__nav-links button {
     padding: 10px 30px;
     margin-right: 30px;
-    background-color: #48e;
+    background-color: var(--btn-color);
+    color: var(--btn-text-color);
     border: none;
     border-radius: 50px;
-    cursor: pointer;;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-button:hover {
-    background-color: #000;
+.header__nav-links button:hover {
+    background-color: var(--btn-color);
+    color: var(--footer-bg-color);
 }
 
-
 /* ------ HEADER ENDS ------*/
+
+/* ------  SECTION ------*/
+
+
+
+/* ------  ENDS ------*/
+
+/* ------ FOOTER SECTION ------*/
+
+
+
+/* ------ FOOTER ENDS ------*/
+
+/* ------ ABAUT US SECTION ------*/
+
+
+
+/* ------ ABAUT US ENDS ------*/
