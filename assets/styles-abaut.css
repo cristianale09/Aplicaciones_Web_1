@@ -81,11 +81,86 @@ body {
 
 /* ------ HEADER ENDS ------*/
 
-/* ------  MAIN SECTION ------*/
+/* ------ ABAUT US SECTION ------*/
 
+.AbautUs__section {
+    width: 100%;
+    min-height: 100vh;    
+}
 
+.AbautUs__container {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
 
-/* ------  MAIN ENDS ------*/
+.AbautUs__content-section {
+    float: left;
+    width: 55%;
+}
+
+.AbautUs__image-section {
+    float: right;
+    width: 40%;
+}
+
+.AbautUs__image-section img {
+    width: 80%;
+    height: auto;
+}
+
+.AbautUs__content-section .AbautUs__title {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.AbautUs__content-section .AbautUs__content h3 {
+    font-size: 21px;
+    color: var(--text-color);
+}
+
+.AbautUs__content-section .AbautUs__content p {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.AbautUs__content-section .AbautUs__content .AbautUs__button{
+    margin-top: 30px;
+}
+
+.AbautUs__content-section .AbautUs__content .AbautUs__button a {
+    background-color: var(--btn-color);
+    padding: 12px 40px;
+    text-decoration: none;
+    color: var(--btn-text-color);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.AbautUs__content-section .AbautUs__content .AbautUs__button a:hover {
+    background-color: var(--header-text-color);
+    color: var(--footer-bg-color);
+}
+
+.AbautUs__content-section .AbautUs__social {
+    margin: 40px 0px;
+}
+
+.AbautUs__content-section .AbautUs__social i {
+    color: var(--header-text-color);
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.AbautUs__content-section .AbautUs__social i:hover {
+    color: var(--text-color);
+}
+
+/* ------ ABAUT US ENDS ------*/
+
 
 /* ------ FOOTER SECTION ------*/
 
