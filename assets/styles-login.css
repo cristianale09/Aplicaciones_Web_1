@@ -16,11 +16,11 @@ body{
     --text-color: #333;
     --input-bg-color: #eee;
     --input-text-color: #888;
-    --btn-color: #48e;
+    --btn-color: #26e;
     --btn-text-color: #fff;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    background: radial-gradient(#FFF, #e2eaff);
 }
 
 .container{

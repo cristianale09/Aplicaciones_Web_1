@@ -8,17 +8,62 @@
     </head>
     <body>
         <!--  HEADER  -->
-        <Header class="header" id="header">
-            <!--  NAVBAR  -->            
-            <img class="header__logo" src="assets/Logo_Cristian-Ale.png">
-            <nav class="Header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="index.html">Home</a></li>
-                    <li class="header__nav-item"><a href="pages/Contacto.html">Contacto</a></li>
-                    <li class="header__nav-item"><a href="pages/quienes.html">Quienes Somos</a></li>                    
-                </ul>
-            </nav>
-            <a class="header__nav-links" href="pages/login.html"><button>Iniciar Sesion</button></a>
-        </Header>
+        <div class="header__main">            
+            <Header class="header" id="header">
+                <!--  NAVBAR  -->            
+                <img class="header__logo" src="assets/Logo_Cristian-Ale.png">
+                <nav class="Header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="index.html">Home</a></li>
+                        <li class="header__nav-item"><a href="pages/productos.html">Productos</a></li>
+                        <li class="header__nav-item"><a href="pages/Contacto.html">Contacto</a></li>
+                        <li class="header__nav-item"><a href="pages/quienes.html">Quienes Somos</a></li>                    
+                    </ul>
+                </nav>
+                <a class="header__nav-links" href="pages/login.html"><button>Iniciar Sesion</button></a>
+            </Header>
+            <!--  MAIN  -->
+            <main>
+                <div class="main__row">
+                    <div class="main__col-2">
+                        <h1>Arma tu PC</h1>
+                        <p>Domina cada partida sin límites. Siente cada explosión <br> y vive cada historia</p>
+                        <a href="/pages/productos.html" class="main__btn">Explora ahora</a>
+                    </div>
+                    <div class="main__col-2">
+                        <img src="assets/pc-gamer2.png" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!--  PHOTO GALERY  -->        
+        <section class="galery__categories">
+            <h2 class="galery-title">Productos</h2>
+            <div class="galery__container">
+                <div class="galery__photo  photo--1">
+                    <h2 class="galery__photo-name">Motherboards</h2>
+                </div>
+                <div class="galery__photo  photo--2">
+                    <h2 class="galery__photo-name">Placas de video</h2>
+                </div>
+                <div class="galery__photo  photo--3">
+                    <h2 class="galery__photo-name">Gabinetes</h2>
+                </div>
+                <div class="galery__photo  photo--4">
+                    <h2 class="galery__photo-name">Monitores</h2>
+                </div>
+                <div class="galery__photo  photo--5">
+                    <h2 class="galery__photo-name">Teclado y mouse</h2>
+                </div>
+                <div class="galery__photo  photo--6">
+                    <h2 class="galery__photo-name">Memorias Ram</h2>
+                </div>
+            </div>        
+        </section>
+        <!--  FOOTER  -->
+        <footer>
+            <strong>Cristian Ale - 2025</strong> - Copyright
+        </footer>
     </body>
 </html>
