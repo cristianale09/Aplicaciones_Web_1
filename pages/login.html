@@ -4,20 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login/Signup Form</title>
-        <link rel="stylesheet" href="../assets/styles-login.css">
+        <link rel="stylesheet" href="../assets/styles/styles-login.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     </head>
     <body>
         <div class="container">
             <div class="form__box login">
-                <form action="#">
+                <form action="#" id="formLogin">
                     <h1>Iniciar sesion</h1>
                     <div class="input__box">
-                        <input type="text" placeholder="Usuario" required>
+                        <input type="text" id="usuarioLogin"  placeholder="Usuario" required>
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="input__box">
-                        <input type="password" placeholder="Contraseña" required>
+                        <input type="password" id="contrasenaLogin" placeholder="Contraseña" required>
                         <i class="fa-solid fa-lock"></i>
                     </div>
                     <div class="forgot__link">
@@ -32,19 +32,19 @@
             </div>
 
             <div class="form__box register">
-                <form action="#">
+                <form action="#" id="formRegistro">
                     <h1>Registrarse</h1>
                     <div class="input__box">
-                        <input type="text" placeholder="Usuario" required>
+                        <input type="text" id="usuario" placeholder="Usuario" required>
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="input__box">
-                        <input type="email" placeholder="Correo" required>
+                        <input type="email" id="correo" placeholder="Correo" required>
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="input__box">
-                        <input type="password" placeholder="Contraseña" required>
-                         <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="contrasena" placeholder="Contraseña" required>
+                        <i class="fa-solid fa-lock"></i>
                     </div>
                     <button type="submit" class="btn">Registrarse</button>
                     <p>Regresar</p>
@@ -69,5 +69,5 @@
             </div>
         </div>
     </body>
-    <script src="../assets/script.js"></script>
+    <script src="../assets/script/script-login.js"></script>
 </html>

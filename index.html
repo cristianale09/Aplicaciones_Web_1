@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>form</title>
-        <link rel="stylesheet" href="assets\styles.css">
+        <link rel="stylesheet" href="assets/styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     </head>
     <body>
         <!--  HEADER  -->
@@ -20,7 +21,43 @@
                         <li class="header__nav-item"><a href="pages/quienes.html">Quienes Somos</a></li>                    
                     </ul>
                 </nav>
-                <a class="header__nav-links" href="pages/login.html"><button>Iniciar Sesion</button></a>
+                <div class="headers_icons">                        
+                    <div class="header__icons">
+                <div class="header__btn-cart">
+                    <a href=""><i class="fa-sharp fa-solid fa-cart-arrow-down"></i></a>
+                    <span id="cartCount">0</span>
+                    
+                    <div class="header__cart-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contentProducts">
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5" class="total">
+                                        <h4 class="heading-total">Total: <span id="total"></span></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <button type="button" id="emptyCart">Empty Cart</button>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                    <a class="header__nav-links" id="authLink" href="pages/login.html">
+                        <button id="authButton">Iniciar Sesión</button>
+                    </a>
+                </div>
             </Header>
             <!--  MAIN  -->
             <main>
@@ -66,4 +103,6 @@
             <strong>Cristian Ale - 2025</strong> - Copyright
         </footer>
     </body>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/auth.js"></script>
 </html>

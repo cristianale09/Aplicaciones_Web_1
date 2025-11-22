@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
         <div class="header__main">
@@ -15,17 +15,21 @@
                 <nav class="Header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a href="../index.html">Home</a></li>                        
-                        <li class="header__nav-item"><a href="../pages/productos.html">Productos</a></li>
+                        <li class="header__nav-item"><a href="../pages/productos-gabinetes.html">Productos</a></li>
                         <li class="header__nav-item"><a href="../pages/Contacto.html">Contacto</a></li>
                         <li class="header__nav-item"><a href="../pages/quienes.html">Quienes Somos</a></li>                    
                     </ul>
                 </nav>
-                <a class="header__nav-links" href="../pages/login.html"><button>Iniciar Sesion</button></a>
+                <div>
+                        <a class="header__nav-links" id="authLink" href="pages/login.html">
+                            <button id="authButton">Iniciar Sesión</button>
+                        </a>
+                    </div>
             </Header>
             <!--  MAIN SECTION  -->
             <div class="contact__container">
                 <span class="contact__big-circle"></span>
-                <img src="../assets/shape.png" class="contact__square" alt="">
+                <img src="" class="contact__square" alt="">
                 <div class="contact__form">
                     <div class="contact__contact-info">
                         <h3 class="contact__title">Pongámonos en contacto</h3>
@@ -89,5 +93,6 @@
             <strong>Cristian Ale - 2025</strong> - Copyright
         </footer>
     </body>
-    <script src="../assets/script-contact.js"></script>
+    <script src="../assets/script/script-contact.js"></script>
+    <script src="../assets/script/auth.js"></script>
 </html>

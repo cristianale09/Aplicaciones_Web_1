@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <!--  HEADER  -->
@@ -15,12 +16,49 @@
             <nav class="Header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="../index.html">Home</a></li>
-                    <li class="header__nav-item"><a href="">Productos</a></li>
+                    <li class="header__nav-item"><a href=""><strong>Productos</strong></a></li>
                     <li class="header__nav-item"><a href="../pages/Contacto.html">Contacto</a></li>
                     <li class="header__nav-item"><a href="../pages/quienes.html">Quienes Somos</a></li>                    
                 </ul>
             </nav>
-            <a class="header__nav-links" href="pages/login.html"><button>Iniciar Sesion</button></a>
+            <div class="header__icons">
+                <div class="header__btn-cart">
+                    <a href=""><i class="fa-sharp fa-solid fa-cart-arrow-down"></i></a>
+                    <span id="cartCount">0</span>
+                    
+                    <div class="header__cart-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contentProducts">
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5" class="total">
+                                        <h4 class="heading-total">Total: <span id="total"></span></h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <button type="button" id="emptyCart">Empty Cart</button>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <a class="header__nav-links" id="authLink" href="pages/login.html">
+                        <button id="authButton">Iniciar Sesión</button>
+                    </a>
+                </div>
+            </div>
         </Header>
     </div>
     <header class="header-secundary">
@@ -37,7 +75,7 @@
     </header>
 
     <!--  MAIN  -->
-    <section class="products__section">
+    <section class="products__section" id="listproducts">
         <h1 class="products_title">Teclados y mouse</h1>
         <div class="Products__container">
             <div class="products__box">
@@ -46,10 +84,10 @@
                 </div>
                 <div class="products__content">
                     <h3>NKB 68</h3>
-                    <div class="products__price">$119.999 <del>$149.999</del></div>
+                    <div class="products__price">$119999</div>
                 </div>
                 <div class="products__icon">
-                    <a href="">Agregar</a>
+                    <a><button type="button" class="product__btn" data-id="21">Agregar</button></a>
                 </div>
             </div>
             <div class="products__box">
@@ -58,10 +96,10 @@
                 </div>
                 <div class="products__content">
                     <h3>RedDragon d1900</h3>
-                    <div class="products__price">$129.999<del>$159.999</del></div>
+                    <div class="products__price">$129999</div>
                 </div>
                 <div class="products__icon">
-                    <a href="">Agregar</a>
+                    <a><button type="button" class="product__btn" data-id="22">Agregar</button></a>
                 </div>
             </div>
             <div class="products__box">
@@ -70,10 +108,10 @@
                 </div>
                 <div class="products__content">
                     <h3>SHENLONG 4000x</h3>
-                    <div class="products__price">$159.999 <del>$199.999</del></div>
+                    <div class="products__price">$159999</div>
                 </div>
                 <div class="products__icon">
-                    <a href="">Agregar</a>
+                    <a><button type="button" class="product__btn" data-id="23">Agregar</button></a>
                 </div>
             </div>
             <div class="products__box">
@@ -82,10 +120,10 @@
                 </div>
                 <div class="products__content">
                     <h3>Logitech G502</h3>
-                    <div class="products__price">$89.999 <span>$99.999</span></div>
+                    <div class="products__price">$88999</div>
                 </div>                
                 <div class="products__icon">
-                    <a href="">Agregar</a>
+                    <a><button type="button" class="product__btn" data-id="24">Agregar</button></a>
                 </div>
             </div>
         </div>
@@ -96,4 +134,6 @@
         <strong>Cristian Ale - 2025</strong> - Copyright
     </footer>
 </body>
+<script src="../assets/script/script.js"></script>
+<script src="../assets/script/auth.js"></script>
 </html>

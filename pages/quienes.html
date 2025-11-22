@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
     <body>
@@ -16,12 +16,17 @@
                 <nav class="Header__nav">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a href="../index.html">Home</a></li>
-                        <li class="header__nav-item"><a href="../pages/productos.html">Productos</a></li>
+                        <li class="header__nav-item"><a href="../pages/productos-gabinetes.html">Productos</a></li>
                         <li class="header__nav-item"><a href="../pages/Contacto.html">Contacto</a></li>
                         <li class="header__nav-item"><a href="../pages/quienes.html">Quienes Somos</a></li>                    
                     </ul>
                 </nav>
-                <a class="header__nav-links" href="../pages/login.html"><button>Iniciar Sesion</button></a>
+                <div>
+                    <a class="header__nav-links" id="authLink" href="pages/login.html">
+                        <button id="authButton">Iniciar Sesión</button>
+                    </a>
+                </div>
+                <!--<a class="header__nav-links" href="../pages/login.html"><button>Iniciar Sesion</button></a>-->
             </Header>
             
             <!--  MAIN  -->
@@ -50,9 +55,11 @@
                     </div>
                 </div>
                 <div class="AbautUs__image-section">
-                    <img src="../assets/Techzone.jpeg">
+                    <img src="../assets/IMG/Contacto.jpeg">
                 </div>
             </div>
         </div>
     </body>
+    <script src="../assets/script/script.js"></script>
+    <script src="../assets/script/auth.js"></script>
 </html>
